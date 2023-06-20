@@ -1,0 +1,26 @@
+--Created Natures Store Database
+
+CREATE TABLE store_items (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, ailse INTEGER);
+INSERT INTO store_items VALUES (1, "chips", 2.99, 6, 1);
+INSERT INTO store_items VALUES (2, "bread", 1.99, 12, 3);
+INSERT INTO store_items VALUES (3, "meat", 6.99, 8, 2);
+INSERT INTO store_items VALUES (4, "cheese", .99, 13, 2);
+INSERT INTO store_items VALUES (5, "candy", 3.99, 15, 4);
+INSERT INTO store_items VALUES (6, "watermelon", .89, 6, 10);
+INSERT INTO store_items VALUES (7, "strawberries", 2.99, 6, 10);
+INSERT INTO store_items VALUES (8, "frozen blueberries", 2.99, 6, 6);
+INSERT INTO store_items VALUES (9, "toaster strudels", 1.99, 9, 6);
+INSERT INTO store_items VALUES (10, "yogurt", .99, 6, 5);
+INSERT INTO store_items VALUES (11, "kombucha", 1.99, 6, 5);
+INSERT INTO store_items VALUES (12, "eggs", 2.99, 6, 5);
+INSERT INTO store_items VALUES (13, "dog food", 11.99, 6, 11);
+INSERT INTO store_items VALUES (14, "candles", 2.99, 6, 7);
+INSERT INTO store_items VALUES (15, "incent", .99, 6, 9);
+
+--Displayed all store items
+
+SELECT * FROM store_items;
+
+--Displayed store items in descending order that were more that 1.99
+
+SELECT * FROM store_items WHERE price > 1.99 ORDER BY price DESC;
